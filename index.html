@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calcolatrice</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <!-- font awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" referrerpolicy="no-referrer" />
+
+        
+    </head>
+    <body>
+
+        <main>
+            <div class="calculator">
+                <div class="output-container">
+                    <output id="result">0</output>
+                    <button id="back"><i class="fa-solid fa-delete-left"></i></button>
+                </div>
+                                <div class="buttons">
+
+                    <div class="row numbers">
+                        <button class="number">7</button>
+                        <button class="number">8</button>
+                        <button class="number">9</button>
+
+                        <button class="number">4</button>
+                        <button class="number">5</button>
+                        <button class="number">6</button>
+
+                        <button class="number">1</button>
+                        <button class="number">2</button>
+                        <button class="number">3</button>
+
+                        <button class="number">0</button>
+                        <button id="comma">.</button>
+                        <button id="calculate" class="orange">=</button>
+                    </div>
+
+                    <div class="row operators">
+                        <button id="cancel" class="orange">C</button>
+                        <button class="operator" data-operator="+">+</button>
+                        <button class="operator" data-operator="-">-</button>
+                        <button class="operator" data-operator="*">&#215;</button>
+                        <button class="operator" data-operator="/">&#247;</button>
+
+                        <button class="operator" data-operator="^">^</button> <!-- Elevazione -->
+                        <button class="operator" data-operator="√">√</button>   <!-- Radice Quadrata -->
+                        <button class="operator" data-operator="%">%</button>  <!-- Modulo -->
+                        <button class="operator" data-operator="!">!</button>  <!-- Fattoriale -->
+                        <button class="operator" data-operator="1/x">1/x</button>  <!-- Inverso -->
+                        <button class="operator" data-operator="|x|">|x|</button>  <!-- Valore assoluto -->
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="assets/js/app.js"></script>
+    </body>
+</html>

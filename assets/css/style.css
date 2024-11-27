@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.calculator {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    width: 400px;
+}
+
+.output-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+#result {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: right;
+    width: 76.5%;
+    display: inline-block;
+}
+
+#back {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    width: 19.5%;
+    display: block;
+    padding: 10px;
+    display: inline-block;
+
+}
+
+.buttons {
+    display: flex;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+
+.numbers {
+    flex: 4;
+}
+
+.operators {
+    flex: 1;
+}
+
+.numbers button {
+    flex-basis: calc(33% - 10px);
+}
+
+.operators button {
+    background-color: #a5a5a5;
+    color: white;
+    border: 0;
+}
+
+button.orange {
+    background: #ff9f0a;
+    border: 0;
+    color: white;
+}
+
+.w-20 {
+    width: 20%;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+
+.w-100 {
+    width: 100%;
+}
+
